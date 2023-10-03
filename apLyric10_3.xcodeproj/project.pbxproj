@@ -12,6 +12,8 @@
 		5A0E29D92ACCB1AE009B9C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E29D82ACCB1AE009B9C95 /* Assets.xcassets */; };
 		5A0E29DC2ACCB1AE009B9C95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E29DB2ACCB1AE009B9C95 /* Preview Assets.xcassets */; };
 		5A0E29E72ACCB212009B9C95 /* ProgressingStyleLyrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0E29E62ACCB212009B9C95 /* ProgressingStyleLyrics.swift */; };
+		5A0E29EB2ACCC683009B9C95 /* lyrics.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A0E29EA2ACCC683009B9C95 /* lyrics.json */; };
+		5A0E29EE2ACCD731009B9C95 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 5A0E29ED2ACCD731009B9C95 /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,7 @@
 		5A0E29D82ACCB1AE009B9C95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A0E29DB2ACCB1AE009B9C95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5A0E29E62ACCB212009B9C95 /* ProgressingStyleLyrics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressingStyleLyrics.swift; sourceTree = SOURCE_ROOT; };
+		5A0E29EA2ACCC683009B9C95 /* lyrics.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lyrics.json; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A0E29EE2ACCD731009B9C95 /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +70,7 @@
 			children = (
 				5A0E29DB2ACCB1AE009B9C95 /* Preview Assets.xcassets */,
 				5A0E29E62ACCB212009B9C95 /* ProgressingStyleLyrics.swift */,
+				5A0E29EA2ACCC683009B9C95 /* lyrics.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -86,6 +91,9 @@
 			dependencies = (
 			);
 			name = apLyric10_3;
+			packageProductDependencies = (
+				5A0E29ED2ACCD731009B9C95 /* SwiftyJSON */,
+			);
 			productName = apLyric10_3;
 			productReference = 5A0E29D12ACCB1AD009B9C95 /* apLyric10_3.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 5A0E29C82ACCB1AD009B9C95;
+			packageReferences = (
+				5A0E29EC2ACCD731009B9C95 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 5A0E29D22ACCB1AD009B9C95 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5A0E29DC2ACCB1AE009B9C95 /* Preview Assets.xcassets in Resources */,
+				5A0E29EB2ACCC683009B9C95 /* lyrics.json in Resources */,
 				5A0E29D92ACCB1AE009B9C95 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5A0E29EC2ACCD731009B9C95 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5A0E29ED2ACCD731009B9C95 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5A0E29EC2ACCD731009B9C95 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5A0E29C92ACCB1AD009B9C95 /* Project object */;
 }
