@@ -4,7 +4,7 @@
 //
 //  Created by Thomas Amosson on 2023.10.03.
 //
-
+/*
 import SwiftUI
 
 @main
@@ -15,3 +15,4 @@ struct apLyric10_3App: App {
         }
     }
 }
+*/
